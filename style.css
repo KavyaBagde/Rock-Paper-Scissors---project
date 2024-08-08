@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgb(11, 11, 51);
+  color: white;
+  height: 10vh;
+  line-height: 10vh;
+  font-size: 3.5vh;
+  gap: 5vmin;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2vmin;
+  padding-right: 2vmin;
+}
+
+#score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#score span {
+  display: block;
+  height: 10vh;
+  width: 10vw;
+  font-size: 6vh;
+  border: none;
+  text-align: center;
+  line-height: 10vh;
+  font-weight: 600;
+  background-color: rgb(214, 214, 238);
+}
+
+#user-1-score {
+  border-bottom-left-radius: 5vmin;
+  border-bottom: 0.5vmin solid rgb(11, 11, 51);
+  border-left: 0.5vmin solid rgb(11, 11, 51);
+}
+
+#user-2-score {
+  border-bottom-right-radius: 5vmin;
+  border-bottom: 0.5vmin solid rgb(11, 11, 51);
+  border-right: 0.5vmin solid rgb(11, 11, 51);
+}
+
+.game-space {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-user {
+  background-color: rgb(132, 132, 223);
+  height: 70vh;
+  width: 10vw;
+  border-top-right-radius: 3vmin;
+  border-bottom-right-radius: 3vmin;
+}
+
+.right-user {
+  background-color: rgb(132, 132, 223);
+  height: 70vh;
+  width: 10vw;
+  border-top-left-radius: 3vmin;
+  border-bottom-left-radius: 3vmin;
+}
+
+.choices {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.choice {
+  height: 15vh;
+  width: 15vh;
+  cursor: pointer;
+}
+
+img:hover {
+  border: 0.15vmin solid white;
+}
+
+img {
+  height: 15vh;
+  width: 15vh;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.center-container {
+  background-color: white;
+  border: 1vmin solid rgb(26, 9, 71);
+  width: 60vw;
+  height: 60vh;
+  margin-top: 5vh;
+  border-radius: 2vmin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.msg {
+  margin: 2vmin;
+  font-size: 8vmin;
+  font-weight: 600;
+  text-align: center;
+}
+
+@media (max-width: 950px) {
+  header {
+    font-size: 1.5vh;
+  }
+
+  #score span {
+    width: 25vw;
+  }
+
+  .game-space {
+    display: unset;
+  }
+
+  .left-user {
+    margin-top: 2vh;
+    height: 17vh;
+    width: 100vw;
+    border-top-right-radius: unset;
+    border-bottom-right-radius: unset;
+  }
+
+  .choices{
+    flex-direction: row;
+  }
+
+  .center-container{
+    margin: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    width: 75vw;
+    height: 30vh;
+  }
+
+  .right-user{
+    height: 17vh;
+    width: 100vw;
+    border-top-left-radius: unset;
+    border-bottom-left-radius: unset;
+  }
+}
